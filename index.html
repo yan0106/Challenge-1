@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código secreto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="./asset/aVector.png" class="logo">
+    <h1 class="titulo">Código secreto</h1>
+  </header>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="input-texto" id="ingresa-texto" placeholder="Ingrese el texto aqui"/> 
+        <button class="btn" type="button" id="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="btn" type="button" id="btn-encriptar" onclick="btnDesencriptar()">Desencriptar</button>
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <form action="">
+      <h4>Mensaje encriptado:</h4>
+      <input class="text-input" type="text" name="input-texto" id="msg" placeholder="Resultado..."/>
+      <button class="btn" type="button" id="btn-copy" onclick="copiarTexto()">Copiar</button>
+      <!-- <input class="btn" type="submit" value="Copiar" id="btn-copy"--> 
+      </form>
+    </section>
+  </main>
+
+  <div class="muñeco">
+    <img src="./asset/Muñeco.png">
+  </div>
+      
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
